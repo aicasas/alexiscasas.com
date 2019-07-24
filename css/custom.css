@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700');
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+code,
+pre,
+tt,
+.code,
+.pre,
+.tt {
+  font-family: 'Roboto Mono', monospace;
+}
+
+hr {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+strong,
+em {
+  color: inherit;
+}
+
+del,
+strike,
+.del,
+.strike
+{
+  text-decoration: line-through;
+}
+
+[class^="has-text-"] a {
+  color: inherit;
+}
+
+
+
+a:not(.button) {
+  text-decoration: currentColor underline dotted;
+}
+
+a:hover:not(.button) {
+  text-decoration: currentColor underline solid;
+}
+
+li p {
+  margin-bottom: 1em;
+}
+
+figure.highlight {
+  text-align: inherit !important;
+}
+
+pre.highlight {
+  margin-bottom: 1em;
+}
+
+.bump,
+.content li.bump {
+  margin-top: 1em;
+}
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+
+  body {
+    font-size: 8pt;
+  }
+}
+
+.rounded-borders {
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  color: #4a4a4a;
+}
+
+.screenshot {
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  color: #4a4a4a;
+  max-width: fill-available;
+}
+
+.schedule .week {
+  display: inline-flex;
+  overflow: hidden;
+  width: 3.75rem;
+  white-space: nowrap;
+}
+
+.schedule ul.icons {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  list-style: none;
+  margin-left: 1.75rem;
+  line-height: normal;
+}
+
+.schedule ul.icons li .li-icon {
+  position: absolute;
+  left: -1.75em;
+  width: 1.75em;
+  text-align: center;
+  line-height: inherit;
+}
+
+.schedule ul.icons li {
+  position: relative;
+}
+.fa {
+display: inline-block;
+padding: 10px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+}
+.fa:hover {
+opacity: 0.7;
+}
+
+.right{
+float:right;
+}
+.left{
+float:left;
+}
+.fa-reddit {
+background: #ffffff;
+color: white;
+visibility: hidden;
+}
+.schedule ul.icons li a {
+  color: inherit;
+}
+
+.schedule ul.icons li a:hover {
+  text-decoration: underline;
+}
+

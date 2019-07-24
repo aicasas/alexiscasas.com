@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+<!-- Much of the code in the body is adapted from http://bl.ocks.org/nbremer/21746a9668ffdf6d8242 -->
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127099913-1"></script>
+<script>
+         window.dataLayer = window.dataLayer || [];
+         
+         function gtag() {
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-127099913-1');
+      </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+<title>Ivan Sepulveda</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+<link rel="stylesheet" href="/css/bulma.min.css">
+<link rel="stylesheet" href="/css/all.min.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/custom.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Google fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+		
+		<style>
+			body {
+			}
+			
+			.legend {
+				font-family: 'Raleway', sans-serif;
+				fill: #333333;
+			}
+			
+			.tooltip {
+				fill: #333333;
+			}
+		</style>
+<style>
+* {
+	box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.twoThirdsColumn {
+	float: left;
+	width: 60%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+.twoThirdsColumnRgiht {
+	float: right;
+	width: 60%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+.oneThirdColumnLeft {
+	float: left;
+	width: 40%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+.oneThirdColumn {
+	float: left;
+	width: 40%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	height: auto;
+	width: auto;
+}
+.moveimage25 {
+	position: relative;
+	top: 25px;
+}
+.moveRight50 {
+	left: 500px;
+}
+figcaption.move75 {
+	text-indent: 75px;
+}
+figcaption.move100 {
+	text-indent: 100px;
+}
+figcaption.move37 {
+	text-indent: 37px;
+}
+figcaption.move18 {
+	text-indent: 18px;
+}
+figcaption.move87 {
+	text-indent: 87px;
+}
+h3, h5 {
+	display: inline;
+}
+	
+	h1.switch {
+	display: inline;
+}
+	
+		h1.switch.a {
+	display: inline;
+			float: left;
+}
+	
+			h1.switch.b {
+	display: inline;
+							float: right;
+
+}
+	
+	#parent {
+    width: 30%;
+    margin: 0 auto;
+}
+	
+	a { color: inherit; } 
+
+</style>
+</head>
+<!-- body -->
+<body>
+<!-- header-->
+<section class="hero is-dark is-bold hidden-print">
+  <div class="is-7 has-text-grey" style="position: absolute; top: 0; right: 1em;"> </div>
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title" align="left"> Ivan Sepulveda </h1>
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-outlined " href="/index.html"> <i class="fas fa-home"></i>&nbsp;Home </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-inverted is-outlined " href="documents/Resume-Feb-2018.pdf" target="_blank"> <i class="fas fa-file-alt"></i>&nbsp;Resume/CV </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-inverted  " href="https://ivan-sepulveda.github.io/Projects.html"> <i class="fas fa-project-diagram"></i>&nbsp;Projects </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-inverted is-outlined" href="/photography/index.html" > <i class="fas fa-book fa-camera"></i>&nbsp;Writing &amp; Photography </a> </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://www.linkedin.com/in/ivansepulveda/" target="_blank"> <i class="fab fa-linkedin"></i>&nbsp;LinkedIn </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://github.com/ivan-sepulveda" target="_blank"> <i class="fab fa-github-alt"></i>&nbsp;Github </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://medium.com/@ivanthequant" target="_blank"> <i class="fab fa-medium"></i>&nbsp;Medium </a> </div>
+        </div>
+      </nav>
+    </div>
+    <!-- end container --> 
+  </div>
+  <!-- end hero --> 
+</section>
+	
+<section class="section"> </section>
+	
+<div class="container">
+  <div class="content" align="left">
+	  
+	  
+	  
+	  	  
+<h1 style="text-align:center;">
+
+<span style="float:none"><a href="/overview.html">Overview</a></span>
+	
+</h1>
+	  
+	  
+<h1>
+	<span style="float:left; opacity: 0.45;"><a href="/Projects.html">Current</a></span>
+
+&nbsp;
+	
+<span style="float:right; opacity: 0.45;"><a href="/completedProjects.html">Completed</a></span>
+</h1>
+
+	  
+
+    
+    <hr>
+	  <p align="center">
+	    	  The following is a visualization I adapted from Nadieh Bremer’s <a href="http://bl.ocks.org/nbremer/21746a9668ffdf6d8242" target="_blank">Radar Chart Redesign</a> project.
+
+	  </p>
+
+<!-- The code below is adapted from http://bl.ocks.org/nbremer/21746a9668ffdf6d8242 -->
+<div class="radarChart"></div>
+<div id="parent">
+		<script src="radarChart.js"></script>	
+		<script >
+      
+      /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+      
+			////////////////////////////////////////////////////////////// 
+			//////////////////////// Set-Up ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var margin = {top: 150, right: 300, bottom: 150, left: 0},
+				width = Math.min(window.innerWidth) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+					
+			////////////////////////////////////////////////////////////// 
+			////////////////////////// Data ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var data = [
+					  [//iPhone
+						{axis:"R",value:0.70},
+						{axis:"SQL",value:0.30},
+						{axis:"Python",value:0.70},
+						{axis:"HTML/CSS/JavaScript",value:0.30},
+						{axis:"Java",value:0.65},
+						{axis:"Regex",value:0.30}
+					  ]
+					];
+			////////////////////////////////////////////////////////////// 
+			//////////////////// Draw the Chart ////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var color = d3.scale.ordinal()
+				.range(["#EDC951","#CC333F","#00A0B0"]);
+				
+			var radarChartOptions = {
+			  w: width,
+			  h: height,
+			  margin: margin,
+			  maxValue: 0.5,
+			  levels: 5,
+			  roundStrokes: true,
+			  color: color
+			};
+			//Call function to draw the Radar chart
+			RadarChart(".radarChart", data, radarChartOptions);
+		</script>
+	  </div>
+    <br>
+    <br>
+	  
+    <br>
+    <br>
+	  
+    <br>
+    <br>
+	  
+    <br>
+    <br>
+	  
+
+	  
+    <br>
+    <br>
+	  
+    <br>
+    <br>
+	  
+
+    <br>
+    <br>
+	  
+  </div>
+</div>
+<!-- footer -->
+<section class="hero is-dark is-bold hidden-print">
+  <div class="is-7 has-text-grey" style="position: absolute; top: 0; right: 1em;"> </div>
+  <div class="hero-body">
+    <div class="container">
+      <div align="center">
+        <p style="text-decoration:none">For any questions, feedback, or concerns,</p>
+        <p style="text-decoration:none">reach out to me at ivan.sepulveda2014@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

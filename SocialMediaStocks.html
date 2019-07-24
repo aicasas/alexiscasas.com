@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127099913-1"></script>
+<script>
+         window.dataLayer = window.dataLayer || [];
+         
+         function gtag() {
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-127099913-1');
+      </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivan Sepulveda</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+<link rel="stylesheet" href="/css/bulma.min.css">
+<link rel="stylesheet" href="/css/all.min.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/custom.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.twoThirdsColumn {
+	float: left;
+	width: 60%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+.twoThirdsColumnRgiht {
+	float: right;
+	width: 60%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+.oneThirdColumnLeft {
+	float: left;
+	width: 40%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+.oneThirdColumn {
+	float: left;
+	width: 40%;
+	padding: 5px;
+	height: auto; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	height: auto;
+	width: auto;
+}
+.moveimage25 {
+	position: relative;
+	top: 25px;
+}
+.moveRight50 {
+	left: 500px;
+}
+figcaption.move75 {
+	text-indent: 75px;
+}
+figcaption.move37 {
+	text-indent: 37px;
+}
+figcaption.move18 {
+	text-indent: 18px;
+}
+</style>
+</head>
+<!-- body -->
+<body>
+<!-- header-->
+<section class="hero is-dark is-bold hidden-print">
+  <div class="is-7 has-text-grey" style="position: absolute; top: 0; right: 1em;"> </div>
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title" align="left"> Ivan Sepulveda </h1>
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-outlined " href="/index.html"> <i class="fas fa-home"></i>&nbsp;Home </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-inverted is-outlined " href="documents/Resume-Feb-2018.pdf" target="_blank"> <i class="fas fa-file-alt"></i>&nbsp;Resume/CV </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-inverted  " href="https://ivan-sepulveda.github.io/Projects.html" target="_blank"> <i class="fas fa-project-diagram"></i>&nbsp;Projects </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted  is-inverted is-outlined" href="/photography/index.html" target="_blank"> <i class="fas fa-book fa-camera"></i>&nbsp;Writing &amp; Photography </a> </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://www.linkedin.com/in/ivansepulveda/" target="_blank"> <i class="fab fa-linkedin"></i>&nbsp;LinkedIn </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://github.com/ivan-sepulveda" target="_blank"> <i class="fab fa-github-alt"></i>&nbsp;Github </a> </div>
+          <div class="level-item"> <a class="button is-fullwidth is-dark is-inverted is-outlined" href="https://medium.com/@ivanthequant" target="_blank"> <i class="fab fa-medium"></i>&nbsp;Medium </a> </div>
+        </div>
+      </nav>
+    </div>
+    <!-- end container --> 
+  </div>
+  <!-- end hero --> 
+</section>
+<section class="section"> </section>
+<div class="container">
+  <div class="content" align="left">
+
+<h1 class="title" align="center">
+			Retail Fashion-Stock Correlation 
+					</h1>
+											<h1 class="subtitle" align="center">
+			August 2018 - December 2018 
+					</h1>
+	  <h2 align="center">
+		  	  This page is still under construction.
+
+	  </h2>
+	
+	  	  <h3>
+			  1.Introduction
+	  </h3>
+	
+	
+	
+	Social media is an increasingly significant aspect of our daily lives; millennials and generation-X especially. As these generations becoming an increasing economic force, it begs the question, does social media play a role in our economy? I seek to find a correlation between  the social media presence of clothing retailers and their stock index.
+	1.Introduction
+
+	We are going to try and correlate a clothing retailers stock price changes with their social media presence. For example, if Nike’s stock price rose in June but fell in July, did they receive/lose a correlating number of likes, comments, video plays, etc.? Equations 1.1 and 1.2 respectively illustrate how we obtain ∆S<sub>%</sub>and ∆P<sub>%</sub> by dynamically defining <span STYLE="text-decoration:overline">S</span> and <span STYLE="text-decoration:overline">P</span>. ∆S<sub>$</sub> being the change in price, ∆S<sub>%</sub> being the same change calculated as a percentage, and <span STYLE="text-decoration:overline">S</span> being the average daily closing stock price for the time period we parse, containing N data points. The constant k is a dimensionless scale factor I intruduced where k = 1 &middot; 10<sup>-7</sup>.
+	<br/><br/>  
+	  	<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	/* Create two equal columns that floats next to each other */
+	.column {
+		float: left;
+		width: 50%;
+		padding: 10px;
+		height: 300px; /* Should be removed. Only for demonstration */
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+	  
+	  	<div class="row">
+	  <div class="column" align="center" style="background-color:#fffff; ">
+		<div style="text-align:center">
+	<img src="https://latex.codecogs.com/gif.latex?\large&space;\overline{L}=&space;\frac{\sum_{i=1}^{N}&space;{&space;L_{i}}}{N}" title="\large \overline{L}= \frac{\sum_{i=1}^{N} { L_{i}}}{N}" /><br/> <br/>
+		  <img src="https://latex.codecogs.com/gif.latex?\large&space;\Delta&space;L_{\%}&space;=&space;\frac{L_{\$,i}&space;-&space;\overline{L}}{\overline{L}}" title="\large \Delta L_{\%} = \frac{L_{\i} - \overline{L}}{\overline{L}}" /> 
+	  <br/> <br/>    
+
+		  <img src="https://latex.codecogs.com/gif.latex?\large&space;\Delta&space;P_{\%}(t)&space;=&space;k&space;\frac{\Delta&space;L_{\%&space;}}{U(t)}" title="\large \Delta P_{\%}(t) = k \frac{\Delta L_{\% }}{U(t)}" />
+	</div>
+	  </div>
+				      <br>
+
+	  <div class="column" align="center" style="background-color:#fffff;">
+		<br/>   <img src="https://latex.codecogs.com/gif.latex?\large&space;\overline{S}=&space;\frac{\sum_{i=1}^{N}&space;{&space;S_{i}}}{N}" title="\large \overline{S}= \frac{\sum_{i=1}^{N} { S_{i}}}{N}" />  <br/> <br/>   
+		<img src="https://latex.codecogs.com/gif.latex?\large&space;\Delta&space;S_{\%,&space;i}&space;=&space;\frac{S_{\$,i}&space;-&space;\overline{S}}{\overline{S}}" title="\large \Delta S_{\%, i} = \frac{S_{\$,i} - \overline{S}}{\overline{S}}" />
+	  </div>
+	</div>
+
+	      <br>
+    <br>
+
+	      <div class="row" align="left">
+
+
+    </div>
+	  	      <br>
+    <br>
+	  	      <div class="row" align="left">
+
+    </div>
+	  
+	  	  	  <h3>
+2. Methodology	  </h3>
+	  	  	  	  <h3>
+2.1 Interpolating Dataset to Estimate Ig Users on any given day	  </h3>
+	  
+	  
+	  	  	  	  <h3>
+	  3. Code Structure	  </h3>
+	  <img align="center" src="projects/completed/images/fashionStocks.png">
+
+	  
+	  
+	  	  	  <h3>
+ 4.4 Instagram users at time of post	  </h3>
+			
+	  <br>
+			
+		January 2013 IG was to have an estimated 90 million users, as of June 2018 that figure is now 1 billion. Currently <span STYLE="text-decoration:overline">S</span> is calculated from the retailers first post up until it's most recent. I have now acquired a dataset with sparsely separated datapoints and will linearly interpolate between them to estimate IG users at any given month.
+
+<hr style="height:1pt; visibility:hidden;" />
+Instagram launched October 6<sup>th</sup>, 2010 but the earliest data point from Statista is January 2013. To address this, I simply used linear interpolation from zero to 90 million.
+
+<hr style="height:1pt; visibility:hidden;" />
+Similarly, I have no information for volume of users after June 2018. It is safer to assume in our age of information, most individuals are already on the platform and any date after June 1<sup>st</sup>, 2018 will be assigned a volume of 1 billion.	
+	  
+	  
+	  <h3>
+  5. Results and Next Steps
+</h3>
+<h3>
+  5.1 Improving Social Media Presence from IG
+</h3>
+
+
+Adding percent change in comments, as they also reflect on the social media presence a company holds on the Instagram platform. 
+<hr style="height:1pt; visibility:hidden;" />
+
+<div align="center">
+<img src="https://latex.codecogs.com/gif.latex?\large&space;\Delta&space;P_{\%}(t)=&space;k&space;\frac{\Delta&space;L_{\%}&space;&plus;&space;\Delta&space;C_{\%}}{U(t)}" title="\large \Delta P_{\%}(t)= k \frac{\Delta L_{\%} + \Delta C_{\%}}{U(t)}" />
+  </div>
+
+In addition, currently <span STYLE="text-decoration:overline">S</span> is caluclated using all datapoints. A possibly more accurate ∆S<sub>%</sub> might be obtained by redefining <span STYLE="text-decoration:overline">S</span> based off weekly, monthly, quarterly average (week-to-date, month-to-date, and quater-to-date for recent data points). For example if we are looking at a data point within the prior week we'd use <span STYLE="text-decoration:overline">S</span><sub>WTD</sub> and N would be five. We are only looking at trading days so we'd set 1: Monday, 2: Tuesday, 3: Wednesday, and so on.
+<hr style="height:1pt; visibility:hidden;" />
+
+<div align="center">
+<img src="https://latex.codecogs.com/gif.latex?\large&space;\overline{S}_{WTD}=&space;\frac{\sum_{j=1}^{N}&space;{&space;S_{j}}}{N},&space;\{1&space;\leq&space;N&space;\leq&space;5\}" title="\large \overline{S}_{WTD}= \frac{\sum_{j=1}^{N} { S_{j}}}{N}, \{1 \leq N \leq 5\}" />
+</div>
+
+<h3>
+  5.2 Integrating Twitter &amp; other SM Platforms
+</h3>
+Say we also integrate Twitter, YouTube, Facebook, and maybe even Snapchat. Then we'd have to assign each othese platforms 'weight'. Specifically, what is the weight of their platforms impact on this Social Media Presence. With the potential question of also integrating Natual Language Processing, should this Social Media Presence be interpreted in multiple variables. Relevancy, current public opinion, and historic public opinion come to mind. Is the company currently relevant? Are they in the headlines? What is the current public outlook? After Nike's Kaepernick campaign, the "current public outlook" was between political lines. What about the historic public opinion? Take Beyond Petroleum, who will forever be remembered for their oil spills. 
+
+    <br>
+    <br>
+	  
+	  <div>
+		  Disclaimer <br>
+  <font size="1">
+    I declare no affiliation, sponsorship, nor any partnerships with any registered trademarks. If your company, brand, or trademark is referenced and you would like it blurred or omitted completely, please reach out to me at the email address contained in the footer of this page.
+<br/>
+<br/>  
+	The information contained herein is for informational purposes only, and has been compiled from sources deemed reliable, and it is accurate to the best of my knowledge and belief as of 9:00PM PST September 20<sup>th</sup>, 2018. However, I cannot guarantee its accuracy, completeness and validity and cannot be held liable for any errors or omissions. Changes are periodically made to this website and may be made at any time. To the maximum extent permitted by law, I disclaim any and all liability in the event any information, commentary, analysis, opinions, advice and/or recommendations prove to be inaccurate, incomplete or unreliable, or result in any investment or other losses.
+<br/>
+<br/>  
+
+Any information contained on this website should not be considered legal or financial advice. I am not an attorney, accountant or financial advisor. You should consult with an attorney or other professional to determine what may be best for your individual needs. No one should make any investment decision without first consulting his or her own financial advisor and conducting his or her own research and due diligence. Content contained on or made available through this website is not intended to and does not constitute legal advice or investment advice and no attorney-client relationship is formed. Your use of the information on this website or materials linked from the Web is at your own risk.
+    <br/>
+<br/>  
+    Scraping data from a search engine results page is almost always going to break the Terms of Service of the search provider. Such Terms of Service probably only exist to deter those who wish to use the data to create a competing service which could potentially undermine the value of the scraped engine. If, however, one wishes to use the data for some other kind of endeavour and they don't abuse the request rate then doing so probably won't infuriate the provider. Nonetheless, I do warn you that if you run the code we shared in the GitHub Repository associated with this project below you are doing it entirely at your own risk.
+        <br/>
+<br/>  
+    I do not in any way condone the practice of illegal activities in relation to hacking. All teachings with regards to malware and other exploits are discussed for educational purposes only and are not written with the intention of malicious application.
+	  	  	      <br>
+	  	      <br>
+	  	      <br>
+
+</font>
+		  
+</div>
+  </div>
+</div>
+
+<!-- footer -->
+<section class="hero is-dark is-bold hidden-print">
+  <div class="is-7 has-text-grey" style="position: absolute; top: 0; right: 1em;"> </div>
+  <div class="hero-body">
+    <div class="container">
+      <div align="center">
+        <p style="text-decoration:none">For any questions, feedback, or concerns,</p>
+        <p style="text-decoration:none">reach out to me at ivan.sepulveda2014@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
